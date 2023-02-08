@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hogwarts Survey Form</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Coat_of_arms_Hogwart_with_motto.svg" alt="Hogwarts Coat of Arms">
+    <h1 id='title'>Hogwarts Survey Form</h1>
+    <p id='description'>Thank you for taking your time to help us improve our school</p>
+    <form id='survey-form'>
+        <fieldset>
+            <label id='name-label'>Name <input id='name' type='text' placeholder='Joe Doe' required/></label>
+            <label id='email-label'>Email <input id='email' type='email' placeholder='email@email.com' required/></label>
+            <label id='number-label'>Age <input id='number' type='number' placeholder='17' min='13' max='18'/></label>
+        </fieldset>
+        <fieldset>
+            <label id='dropdown-label' for="dropdown">
+                What is your favourite subject?
+                <select id='dropdown'>
+                    <option>Select an option</option>
+                    <option>Transfiguration</option>
+                    <option>Defence Against the Dark Arts</option>
+                    <option>Charms</option>
+                    <option>Potions</option>
+                    <option>Astronomy</option>
+                    <option>History of Magic</option>
+                    <option>Herbology</option>
+                    <option>Arithmancy</option>
+                    <option>Study of Ancient Runes</option>
+                    <option>Divination</option>
+                    <option>Care of Magical Creatures</option>
+                    <option>Muggle Studies</option>
+                    <option>Alchemy</option>
+                    <option>Flying</option>
+                    <option>Apparition</option>
+                </select>
+              </label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your house?</legend>
+            <label><input value='gryffindor' name='house' type='radio'/>Gryffindor</label>
+            <label><input value='hufflepuff' name='house' type='radio'/>Hufflepuff</label>
+            <label><input value='ravenclaw' name='house' type='radio'/>Ravenclaw</label>
+            <label><input value='slytherin' name='house' type='radio'/>Slytherin</label>
+        </fieldset>
+        <fieldset>
+            <legend>Which extra-curricular activities are you taking part?</legend>
+            <label id='checkbox-label'><input value = 'art' name='extra' type='checkbox'/>Art Club</label>
+            <label id='checkbox-label'><input value = 'astronomy' name='extra' type='checkbox'/>Astronomy Club</label>
+            <label id='checkbox-label'><input value = 'charms' name='extra' type='checkbox'/>Charms Club</label>
+            <label id='checkbox-label'><input value = 'dueling' name='extra' type='checkbox'/>Duelling Club</label>
+            <label id='checkbox-label'><input value = 'choir' name='extra' type='checkbox'/>Frog Choir</label>
+            <label id='checkbox-label'><input value = 'runes' name='extra' type='checkbox'/>Ancient Runes Club</label>
+            <label id='checkbox-label'><input value = 'gobstone' name='extra' type='checkbox'/>Gobstone Club</label>
+            <label id='checkbox-label'><input value = 'orchestra' name='extra' type='checkbox'/>Hogwarts Orchestra</label>
+            <label id='checkbox-label'><input value = 'magical-creatures' name='extra' type='checkbox'/>Magical Creatures Club</label>
+            <label id='checkbox-label'><input value = 'potions' name='extra' type='checkbox'/>Potions Club</label>
+            <label id='checkbox-label'><input value = 'rat-race' name='extra' type='checkbox'/>Rat Race Club</label>
+            <label id='checkbox-label'><input value = 'slug-and-bugs' name='extra' type='checkbox'/>Slugs and Bugs Club</label>
+            <label id='checkbox-label'><input value = 'slug' name='extra' type='checkbox'/>Slug Club</label>
+            <label id='checkbox-label'><input value = 'card' name='extra' type='checkbox'/>Wizard Card Collectors' Club</label>
+            <label id='checkbox-label'><input value = 'dragon' name='extra' type='checkbox'/>Dragon Club</label>
+            <label id='checkbox-label'><input value = 'sphinx' name='extra' type='checkbox'/>Sphinx Club</label>
+            <label id='checkbox-label'><input value = 'hippogriff' name='extra' type='checkbox'/>Hippogriff Club</label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">Any comments or suggestions to improve our school?
+                <textarea id="comments" placeholder="Enter your comments or suggestions here..."></textarea>
+            </label>
+        </fieldset> 
+        <input id='submit' type='submit' value='Submit'>
+    </form>
+  </body>
+</html>
